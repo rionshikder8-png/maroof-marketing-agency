@@ -21,6 +21,6 @@ npm run check   # validates links, assets, anchors, titles, descriptions, WhatsA
 4. (Or use **New + -> Blueprint**; `render.yaml` holds the same settings.)
 
 ## Replacing assets
-- **Logo:** replace `assets/img/logo-mma.png` (transparent PNG/SVG, any size; proportions are preserved). It is used in header and footer from this one file. Also refresh `assets/img/favicon.png`, `apple-touch-icon.png`, `og-image.jpg` and `assets/favicon.ico` if the mark changes.
+- **Logo:** header/footer use `assets/img/logo-mma-light.png` (transparent, white wordmark for dark backgrounds). `assets/img/logo-mma.png` is the transparent original for light backgrounds. To rebrand, replace both (PNG/SVG, proportions are preserved) and refresh favicon/OG images.
 - **Portfolio:** concept artwork lives in the `concept()` / `PROJECTS` definitions in `build.mjs`. All are labeled "Concept Project". Replace them with real work when available.
 - **Contact details:** constants at the top of `build.mjs` and `WA_NUM` in `assets/js/main.js`.

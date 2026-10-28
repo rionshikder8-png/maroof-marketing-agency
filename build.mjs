@@ -6,7 +6,7 @@ const SITE = 'https://maroof360.onrender.com';
 const WA_NUM = '923190482228';
 const WA_DISPLAY = '+92 319 0482228';
 const WA = `https://wa.me/${WA_NUM}`;
-const LOGO = '/assets/img/logo-mma.png'; // <- replace this single file to update the logo everywhere
+const LOGO = '/assets/img/logo-mma-light.png'; // transparent logo for dark backgrounds (header + footer). Light-background version: logo-mma.png
 
 const I = {
   meta:'<path d="M3 12c0-3 2-6 4.5-6S11 10 12 12s2.5 6 4.5 6S21 15 21 12s-2-6-4.5-6S13 10 12 12s-2.5 6-4.5 6S3 15 3 12z"/>',
@@ -60,7 +60,7 @@ const header = (path) => `
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="/" aria-label="Maroof Marketing Agency, home"><img class="brand-logo" src="${LOGO}" alt="Maroof Marketing Agency logo" width="132" height="43"></a>
+    <a class="brand" href="/" aria-label="Maroof Marketing Agency, home"><img class="brand-logo" src="${LOGO}" alt="Maroof Marketing Agency logo" width="150" height="49"></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span></button>
     <div class="nav-panel" id="nav-panel">
       <nav aria-label="Primary"><ul class="nav-links">
@@ -76,7 +76,7 @@ const footer = () => `
 <footer class="site-footer">
   <div class="container foot-grid">
     <div>
-      <a class="brand" href="/" aria-label="Maroof Marketing Agency, home"><img class="brand-logo" src="${LOGO}" alt="Maroof Marketing Agency logo" width="132" height="43" loading="lazy"></a>
+      <a class="brand" href="/" aria-label="Maroof Marketing Agency, home"><img class="brand-logo" src="${LOGO}" alt="Maroof Marketing Agency logo" width="150" height="49" loading="lazy"></a>
       <p style="margin-top:1rem;max-width:34ch">Digital marketing, creative design and web development for businesses ready to grow their online presence.</p>
     </div>
     <div><h4>Navigate</h4><ul>${NAV.map(([h, l]) => `<li><a href="${h}">${l}</a></li>`).join('')}</ul></div>
