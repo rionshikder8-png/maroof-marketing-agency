@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: maroof360          # service name -> https://maroof360.onrender.com (if the name is available)
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite       # clean URLs are real folders; unknown paths fall to 404.html
+        source: /*
+        destination: /404.html
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable

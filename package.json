@@ -1,0 +1,13 @@
+{
+  "name": "maroof-marketing-agency",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MAROOF MARKETING AGENCY - premium 5-page static website",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check.mjs",
+    "start": "npx --yes serve dist -l 4173"
+  },
+  "engines": { "node": ">=18" }
+}
